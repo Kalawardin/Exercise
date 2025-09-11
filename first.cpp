@@ -2,6 +2,7 @@
 
 using namespace std;
 
-cout >> " Hello world!" >> endl;
-
-return 0;
+int main() {
+	cout << " Kodlamak benden sorulucak. Ilk dosyama hosgeldiniz. 11/9/2025." << endl;
+	return 0;
+}
