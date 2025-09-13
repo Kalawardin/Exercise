@@ -70,4 +70,13 @@ root of quadratic = r(-b+sqrt(b*b-4*a*c))/(2*a)
  i=i+1
  i+=1  same
  i++ 
+
+ BITWISE OPERATORS
+ & and
+ : or                       
+ ^ x-or
+ ~ not
+ << 
+ >>
  
+ bit1
