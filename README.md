@@ -8,6 +8,11 @@ integral: whole nukmbers
 bool:true or false
 floating point: decimal numbers
 
+short s = 10;
+long l = 1000000;
+float f = 3.14f;
+double d = 3.14159;
+
 Data Type    size        range
 int         2 or 4      -3276 8 to 32767
 float          4           

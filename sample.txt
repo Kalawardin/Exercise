@@ -1,0 +1,4 @@
+# sample input
+Hello, world! This is a test.
+The longestwordhere appears twice: longestwordhere.
+Punctuation (like this) is ignored; commas, periods; and parentheses.

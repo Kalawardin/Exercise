@@ -1,0 +1,40 @@
+Define class Car:
+    - id (int)
+    - license (string)
+    - num_moves (int, starts at 0)
+    - Methods: move(), get_num_moves(), get_license(), operator<<
+
+Define class Garage:
+    - next_car_id (int, starts at 1)
+    - parking_lot (deque of Car)
+    - parking_lot_limit (size_t, default 10)
+    - Methods: arrival(license), departure(license)
+
+Function get_input_vals(line, xact_type, license):
+    - Parse line to extract xact_type ('A' or 'D') and license
+
+Main function:
+    - Create Garage object
+    - While reading each line from stdin:
+        - Use get_input_vals to parse line
+        - If xact_type == 'A':
+            - Call garage.arrival(license)
+        - Else if xact_type == 'D':
+            - Call garage.departure(license)
+
+Garage.arrival(license):
+    - If parking_lot is full:
+        - Print garage full message
+    - Else:
+        - Create Car object with next_car_id and license
+        - Print arrival message
+        - Add Car to parking_lot
+
+Garage.departure(license):
+    - Search for Car with matching license in parking_lot
+    - If not found:
+        - Print error message
+    - Else:
+        - Move cars in the way (closer to exit) to a stack, increment their num_moves
+        - Remove departing Car, increment its num_moves, print departure message
+        - Restore moved cars from stack back to parking_lot in original order
