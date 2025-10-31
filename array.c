@@ -13,18 +13,9 @@ int main(){
     }
     sayac=0;
     while(sayac<(7/2)){
-        //1 i al bosa dok, 
-        //7yi al 1 e dok,
-        //bosu al 7 ye dok,
-        //2 i al bosa dok, 
-        //6yi al 2 e dok,
-        //bosu al 6 ye dok,
-        //3 i al bosa dok, 
-        //5yi al 3 e dok,
-        //bosu al 5 ye dok,
         temp=notlar[sayac]; 
-        notlar[sayac]=notlar[7-sayac];
-        notlar[7-sayac]=temp;
+        notlar[sayac]=notlar[6-sayac];
+        notlar[6-sayac]=temp;
         sayac=sayac+1;
         
         
@@ -41,7 +32,9 @@ int main(){
 
 
 
-
+//bos baradagi o anki adimin bardagina esitle   
+//once dizide bulunan toplam bardak sayisini bulundugumuz adimdaki bardak sayisindan cikartarak hangi bardagi hangisiyle degistermeliyiz buna ulasiriz. Ardindan bu 2 bardagi esitle.
+//biraz once buldugumuz bardagi bos bardaga esitleriz
 
 
 
